@@ -1,0 +1,434 @@
+{
+  "users": [
+    {
+      "id": "4bf8",
+      "username": "ram",
+      "email": "ram1@gmail.com",
+      "password": "ram123",
+      "cpassword": "ram123",
+      "address": "bujwucccccdddd",
+      "pincode": "384002",
+      "phone": "9123456780",
+      "isAdmin": false,
+      "createdAt": "2025-03-22T17:59:23.381Z"
+    },
+    {
+      "id": "1asd",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "isAdmin": true
+    },
+    {
+      "id": "899a",
+      "username": "ram ",
+      "email": "ram@gmail.com",
+      "password": "ram123",
+      "cpassword": "ram123",
+      "address": "ram nagar socity",
+      "pincode": "384002",
+      "phone": "9989796959",
+      "isAdmin": false,
+      "createdAt": "2025-03-22T18:06:22.096Z"
+    },
+    {
+      "id": "a37d",
+      "username": "krupa",
+      "email": "krupa1@gmail.com",
+      "password": "krupa123",
+      "cpassword": "krupa123",
+      "address": "radhanpur road mehsana",
+      "pincode": "384002",
+      "phone": "7654321900",
+      "isAdmin": false,
+      "createdAt": "2025-03-27T15:38:54.431Z"
+    },
+    {
+      "id": "1f62",
+      "username": "krupa",
+      "email": "krupa23@gmail.com",
+      "password": "krupa123",
+      "cpassword": "krupa123",
+      "address": "modhera road,mehsana",
+      "pincode": "384002",
+      "phone": "9876543210",
+      "isAdmin": false,
+      "createdAt": "2025-03-27T15:41:09.159Z"
+    },
+    {
+      "id": "cee5",
+      "username": "dharmi ",
+      "email": "dharmi@gmail.com",
+      "password": "dharmi123",
+      "cpassword": "dharmi123",
+      "address": "dwcduinnnnnnnnnnnnnn",
+      "pincode": "345678",
+      "phone": "9876879087",
+      "isAdmin": false,
+      "createdAt": "2025-03-27T16:37:54.083Z"
+    },
+    {
+      "id": "8a7b",
+      "username": "ram",
+      "email": "ram@gmail.com",
+      "password": "ram123",
+      "cpassword": "ram123",
+      "address": "gwgkkkkkkkkkkkkkk",
+      "pincode": "678954",
+      "phone": "9876543212",
+      "isAdmin": false,
+      "createdAt": "2025-03-27T19:45:38.401Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "07ae",
+      "name": "cbsdjcbd",
+      "brand": "",
+      "category": "Sadi",
+      "price": 300,
+      "stock": 9,
+      "images": [
+        "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
+      ],
+      "desc": "weeeeeeeeeeeeeeeeeee",
+      "createdAt": "2025-03-27T17:29:32.026Z",
+      "supplierId": "a756",
+      "supplier": "krupa",
+      "editedAt": "2025-03-27T21:12:54.622Z"
+    },
+    {
+      "id": "f966",
+      "name": "Black Georgette Lehenga Set",
+      "brand": "",
+      "category": "lehenga",
+      "price": 5000,
+      "stock": 10,
+      "images": [
+        "http://res.cloudinary.com/krupa27/image/upload/v1743107698/RentTrendproduct/ocnghqdy7isas0v2oorh.webp",
+        "http://res.cloudinary.com/krupa27/image/upload/v1743107718/RentTrendproduct/i5ifnuh6jvufrpqtsyu3.webp",
+        "http://res.cloudinary.com/krupa27/image/upload/v1743107723/RentTrendproduct/oyzcpxkg4tqhhzijarph.webp"
+      ],
+      "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta\n",
+      "createdAt": "2025-03-27T20:37:01.187Z"
+    },
+    {
+      "id": "62ca",
+      "name": "Lavender Tissue Silk Anarkali",
+      "brand": "",
+      "category": "Lehenga",
+      "price": 3000,
+      "stock": 8,
+      "images": [
+        "http://res.cloudinary.com/krupa27/image/upload/v1743109657/RentTrendproduct/yleh440wlbc9xhjoeze0.webp",
+        "http://res.cloudinary.com/krupa27/image/upload/v1743109665/RentTrendproduct/kvonricie1k5j0aascat.webp",
+        "http://res.cloudinary.com/krupa27/image/upload/v1743109666/RentTrendproduct/jmns0vhitvih0udaxpwx.webp"
+      ],
+      "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta",
+      "createdAt": "2025-03-27T21:09:36.853Z",
+      "supplierId": "a756",
+      "supplier": "krupa"
+    },
+    {
+      "id": "a663",
+      "name": "lehenga",
+      "brand": "",
+      "category": "Lehenga",
+      "price": 3000,
+      "stock": 3,
+      "images": [
+        "http://res.cloudinary.com/krupa27/image/upload/v1743422723/RentTrendproduct/owodhh0hzrruqjhhcs5p.webp"
+      ],
+      "desc": "party lehenga",
+      "createdAt": "2025-03-31T12:05:44.990Z"
+    },
+    {
+      "id": "57bd",
+      "name": "parri saree",
+      "brand": "",
+      "category": "Sadi",
+      "price": 1000,
+      "stock": 1,
+      "images": [
+        "http://res.cloudinary.com/krupa27/image/upload/v1743499703/RentTrendproduct/tmjsthoixx5cgvvy12hm.webp"
+      ],
+      "desc": "silk saree",
+      "createdAt": "2025-04-01T09:29:36.752Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "b6dc",
+      "name": "lehenga",
+      "desc": "gn jfjfd gnjukmyh",
+      "image": "http://res.cloudinary.com/krupa27/image/upload/v1742991230/RentTrendproject/dy8nurpcjegnmr1cz5kc.webp",
+      "createdAt": "2025-03-26T12:13:53.255Z",
+      "editedAt": "2025-03-27T20:26:12.957Z"
+    },
+    {
+      "id": "91ef",
+      "name": "Sadi",
+      "desc": "weioruiouepiorueirqwepiuruqwepir",
+      "image": "http://res.cloudinary.com/krupa27/image/upload/v1742991574/RentTrendproject/hmewslsue9eyjbooiceq.webp",
+      "createdAt": "2025-03-26T12:19:38.622Z"
+    },
+    {
+      "id": "8c78",
+      "name": "qwertyuiol",
+      "desc": "qaedyhm,jhgfdsfv",
+      "image": "http://res.cloudinary.com/krupa27/image/upload/v1742991794/RentTrendproject/poa4emiowmoe6eec76yv.webp",
+      "createdAt": "2025-03-26T12:23:20.301Z"
+    },
+    {
+      "id": "debd",
+      "name": "Lehenga",
+      "desc": "Lavender Tissue Silk Anarkali",
+      "image": "http://res.cloudinary.com/krupa27/image/upload/v1743109107/RentTrendproject/jx2w8bhcs16vzqlinadl.webp",
+      "createdAt": "2025-03-27T20:58:41.547Z",
+      "editedAt": "2025-03-27T21:00:54.708Z"
+    },
+    {
+      "id": "f9e1",
+      "name": "Lehenga",
+      "desc": "Lavender Tissue Silk Anarkali",
+      "image": "http://res.cloudinary.com/krupa27/image/upload/v1743109427/RentTrendproject/eriddsj7xcfdwjidvqr9.avif",
+      "createdAt": "2025-03-27T21:03:50.068Z"
+    }
+  ],
+  "supplier": [
+    {
+      "id": "a756",
+      "storeName": "vdcvjvcahc",
+      "supplierName": "krupa",
+      "email": "krupa2301@gmail.com",
+      "password": "krupa123",
+      "phone": "9123456780",
+      "storeAddress": "bxjsjsjsjooooooooooooooooo",
+      "pincode": "384002",
+      "isSupplier": true,
+      "createdAt": "2025-03-24T10:30:48.347Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "8bde",
+      "cartItems": [
+        {
+          "id": "07ae",
+          "name": "cbsdjcbd",
+          "brand": "",
+          "category": "Sadi",
+          "price": 300,
+          "stock": 9,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
+          ],
+          "desc": "weeeeeeeeeeeeeeeeeee",
+          "createdAt": "2025-03-27T17:29:32.026Z",
+          "supplierId": "a756",
+          "supplier": "krupa",
+          "editedAt": "2025-03-27T21:12:54.622Z",
+          "BookingDate": "2025-03-31",
+          "returnDate": "2025-04-02",
+          "totalPrice": 600,
+          "qty": 1
+        }
+      ],
+      "total": 300,
+      "username": "ram",
+      "email": "ram1@gmail.com",
+      "paymentMethod": "online",
+      "orderStatus": "placed",
+      "orderDate": "31/03/2025",
+      "orderTime": "16:03:35",
+      "shippingAddress": {
+        "name": "chcv",
+        "mobile": "77777777777",
+        "address1": "m,n, m, ",
+        "address2": "m nnk",
+        "city": "vuhbhjb",
+        "state": "ghvh v",
+        "country": "mknm,",
+        "pincode": "66666666"
+      },
+      "createdAt": "2025-03-31T10:33:35.156Z"
+    },
+    {
+      "id": "7c8d",
+      "cartItems": [
+        {
+          "id": "f966",
+          "name": "Black Georgette Lehenga Set",
+          "brand": "",
+          "category": "lehenga",
+          "price": 5000,
+          "stock": 10,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107698/RentTrendproduct/ocnghqdy7isas0v2oorh.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107718/RentTrendproduct/i5ifnuh6jvufrpqtsyu3.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107723/RentTrendproduct/oyzcpxkg4tqhhzijarph.webp"
+          ],
+          "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta\n",
+          "createdAt": "2025-03-27T20:37:01.187Z",
+          "BookingDate": "2025-03-31",
+          "returnDate": "2025-04-03",
+          "totalPrice": 15000,
+          "qty": 1
+        },
+        {
+          "id": "62ca",
+          "name": "Lavender Tissue Silk Anarkali",
+          "brand": "",
+          "category": "Lehenga",
+          "price": 3000,
+          "stock": 8,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743109657/RentTrendproduct/yleh440wlbc9xhjoeze0.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743109665/RentTrendproduct/kvonricie1k5j0aascat.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743109666/RentTrendproduct/jmns0vhitvih0udaxpwx.webp"
+          ],
+          "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta",
+          "createdAt": "2025-03-27T21:09:36.853Z",
+          "supplierId": "a756",
+          "supplier": "krupa",
+          "BookingDate": "2025-03-31",
+          "returnDate": "2025-04-02",
+          "totalPrice": 6000,
+          "qty": 1
+        },
+        {
+          "id": "07ae",
+          "name": "cbsdjcbd",
+          "brand": "",
+          "category": "Sadi",
+          "price": 300,
+          "stock": 9,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
+          ],
+          "desc": "weeeeeeeeeeeeeeeeeee",
+          "createdAt": "2025-03-27T17:29:32.026Z",
+          "supplierId": "a756",
+          "supplier": "krupa",
+          "editedAt": "2025-03-27T21:12:54.622Z",
+          "BookingDate": "2025-03-31",
+          "returnDate": "2025-04-04",
+          "totalPrice": 1200,
+          "qty": 1
+        }
+      ],
+      "total": 8300,
+      "username": "ram ",
+      "email": "ram@gmail.com",
+      "paymentMethod": "online",
+      "orderStatus": "placed",
+      "orderDate": "31/03/2025",
+      "orderTime": "17:21:03",
+      "shippingAddress": {
+        "name": "h",
+        "mobile": "vhj",
+        "address1": "vjhvjvj",
+        "address2": "gjhgjh",
+        "city": "vjvgjh",
+        "state": "vjhvj",
+        "country": "jhvjh",
+        "pincode": "5555555"
+      },
+      "createdAt": "2025-03-31T11:51:03.395Z"
+    },
+    {
+      "id": "b0e7",
+      "cartItems": [
+        {
+          "id": "07ae",
+          "name": "cbsdjcbd",
+          "brand": "",
+          "category": "Sadi",
+          "price": 300,
+          "stock": 9,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
+          ],
+          "desc": "weeeeeeeeeeeeeeeeeee",
+          "createdAt": "2025-03-27T17:29:32.026Z",
+          "supplierId": "a756",
+          "supplier": "krupa",
+          "editedAt": "2025-03-27T21:12:54.622Z",
+          "BookingDate": "2025-04-02",
+          "returnDate": "2025-04-17",
+          "totalPrice": 0,
+          "qty": 1
+        },
+        {
+          "id": "f966",
+          "name": "Black Georgette Lehenga Set",
+          "brand": "",
+          "category": "lehenga",
+          "price": 5000,
+          "stock": 10,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107698/RentTrendproduct/ocnghqdy7isas0v2oorh.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107718/RentTrendproduct/i5ifnuh6jvufrpqtsyu3.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107723/RentTrendproduct/oyzcpxkg4tqhhzijarph.webp"
+          ],
+          "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta\n",
+          "createdAt": "2025-03-27T20:37:01.187Z",
+          "BookingDate": "2025-04-02",
+          "returnDate": "2025-04-08",
+          "totalPrice": 0,
+          "qty": 1
+        }
+      ],
+      "total": 5300,
+      "username": "ram",
+      "email": "ram1@gmail.com",
+      "paymentMethod": "online",
+      "orderStatus": "placed",
+      "orderDate": "01/04/2025",
+      "orderTime": "14:26:39",
+      "shippingAddress": {
+        "name": "GJGJJG",
+        "mobile": "jhfjf",
+        "address1": "fyuf",
+        "address2": "jhgjh",
+        "city": "fjyf",
+        "state": "hguk",
+        "country": "jhfj",
+        "pincode": "345678"
+      },
+      "createdAt": "2025-04-01T08:56:39.848Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "d34a",
+      "orderId": "d500",
+      "productId": "2468",
+      "productName": "sadi",
+      "username": "ram",
+      "rating": 5,
+      "comment": "good",
+      "date": "2025-03-31T09:55:48.866Z"
+    },
+    {
+      "id": "273a",
+      "orderId": "8bde",
+      "productId": "07ae",
+      "productName": "cbsdjcbd",
+      "username": "ram",
+      "rating": 5,
+      "comment": "good",
+      "date": "2025-03-31T10:33:51.081Z"
+    },
+    {
+      "id": "fe41",
+      "orderId": "7c8d",
+      "productId": "07ae",
+      "productName": "cbsdjcbd",
+      "username": "ram ",
+      "rating": 3.5,
+      "comment": "ggggggg",
+      "date": "2025-03-31T11:51:53.059Z"
+    }
+  ],
+  "coupons": []
+}
