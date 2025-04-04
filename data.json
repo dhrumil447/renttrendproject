@@ -86,7 +86,7 @@
       "brand": "",
       "category": "Sadi",
       "price": 300,
-      "stock": 9,
+      "stock": 8,
       "images": [
         "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
       ],
@@ -100,7 +100,7 @@
       "id": "f966",
       "name": "Black Georgette Lehenga Set",
       "brand": "",
-      "category": "lehenga",
+      "category": "Lehenga",
       "price": 5000,
       "stock": 10,
       "images": [
@@ -130,15 +130,15 @@
     },
     {
       "id": "a663",
-      "name": "lehenga",
+      "name": "Lehenga",
       "brand": "",
       "category": "Lehenga",
       "price": 3000,
-      "stock": 3,
+      "stock": 0,
       "images": [
         "http://res.cloudinary.com/krupa27/image/upload/v1743422723/RentTrendproduct/owodhh0hzrruqjhhcs5p.webp"
       ],
-      "desc": "party lehenga",
+      "desc": "party Lehenga",
       "createdAt": "2025-03-31T12:05:44.990Z"
     },
     {
@@ -158,7 +158,7 @@
   "categories": [
     {
       "id": "b6dc",
-      "name": "lehenga",
+      "name": "Lehenga",
       "desc": "gn jfjfd gnjukmyh",
       "image": "http://res.cloudinary.com/krupa27/image/upload/v1742991230/RentTrendproject/dy8nurpcjegnmr1cz5kc.webp",
       "createdAt": "2025-03-26T12:13:53.255Z",
@@ -210,7 +210,49 @@
   ],
   "orders": [
     {
-      "id": "8bde",
+      "id": "f498",
+      "cartItems": [
+        {
+          "id": "f966",
+          "name": "Black Georgette Lehenga Set",
+          "brand": "",
+          "category": "Lehenga",
+          "price": 5000,
+          "stock": 10,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107698/RentTrendproduct/ocnghqdy7isas0v2oorh.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107718/RentTrendproduct/i5ifnuh6jvufrpqtsyu3.webp",
+            "http://res.cloudinary.com/krupa27/image/upload/v1743107723/RentTrendproduct/oyzcpxkg4tqhhzijarph.webp"
+          ],
+          "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta\n",
+          "createdAt": "2025-03-27T20:37:01.187Z",
+          "BookingDate": "2025-04-09",
+          "returnDate": "2025-04-13",
+          "totalPrice": 0,
+          "qty": 1
+        }
+      ],
+      "total": 5000,
+      "username": "ram",
+      "email": "ram1@gmail.com",
+      "paymentMethod": "cod",
+      "orderStatus": "delivered",
+      "shippingAddress": {
+        "name": "Dhrumil Patel",
+        "address1": "Idar",
+        "city": "Jadar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "383110",
+        "mobile": "09913618010"
+      },
+      "orderDate": "4/3/2025",
+      "orderTime": "1:22:07 AM",
+      "createdAt": "2025-04-02T19:52:07.387Z",
+      "editedAt": "2025-04-02T19:53:33.322Z"
+    },
+    {
+      "id": "615b",
       "cartItems": [
         {
           "id": "07ae",
@@ -218,7 +260,7 @@
           "brand": "",
           "category": "Sadi",
           "price": 300,
-          "stock": 9,
+          "stock": 1,
           "images": [
             "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
           ],
@@ -227,175 +269,188 @@
           "supplierId": "a756",
           "supplier": "krupa",
           "editedAt": "2025-03-27T21:12:54.622Z",
-          "BookingDate": "2025-03-31",
-          "returnDate": "2025-04-02",
-          "totalPrice": 600,
+          "BookingDate": "2025-04-05",
+          "returnDate": "2025-04-09",
+          "totalPrice": 0,
           "qty": 1
         }
       ],
       "total": 300,
       "username": "ram",
       "email": "ram1@gmail.com",
-      "paymentMethod": "online",
+      "paymentMethod": "cod",
       "orderStatus": "placed",
-      "orderDate": "31/03/2025",
-      "orderTime": "16:03:35",
       "shippingAddress": {
-        "name": "chcv",
-        "mobile": "77777777777",
-        "address1": "m,n, m, ",
-        "address2": "m nnk",
-        "city": "vuhbhjb",
-        "state": "ghvh v",
-        "country": "mknm,",
-        "pincode": "66666666"
+        "name": "Dhrumil Patel",
+        "address1": "Idar",
+        "city": "Jadar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "383110",
+        "mobile": "9512721508"
       },
-      "createdAt": "2025-03-31T10:33:35.156Z"
+      "orderDate": "4/4/2025",
+      "orderTime": "10:27:28 PM",
+      "createdAt": "2025-04-04T16:57:28.463Z"
     },
     {
-      "id": "7c8d",
+      "id": "6645",
       "cartItems": [
         {
-          "id": "f966",
-          "name": "Black Georgette Lehenga Set",
+          "id": "07ae",
+          "name": "cbsdjcbd",
           "brand": "",
-          "category": "lehenga",
-          "price": 5000,
-          "stock": 10,
+          "category": "Sadi",
+          "price": 300,
+          "stock": 9,
           "images": [
-            "http://res.cloudinary.com/krupa27/image/upload/v1743107698/RentTrendproduct/ocnghqdy7isas0v2oorh.webp",
-            "http://res.cloudinary.com/krupa27/image/upload/v1743107718/RentTrendproduct/i5ifnuh6jvufrpqtsyu3.webp",
-            "http://res.cloudinary.com/krupa27/image/upload/v1743107723/RentTrendproduct/oyzcpxkg4tqhhzijarph.webp"
+            "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
           ],
-          "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta\n",
-          "createdAt": "2025-03-27T20:37:01.187Z",
-          "BookingDate": "2025-03-31",
-          "returnDate": "2025-04-03",
-          "totalPrice": 15000,
+          "desc": "weeeeeeeeeeeeeeeeeee",
+          "createdAt": "2025-03-27T17:29:32.026Z",
+          "supplierId": "a756",
+          "supplier": "krupa",
+          "editedAt": "2025-03-27T21:12:54.622Z",
+          "BookingDate": "",
+          "returnDate": "",
+          "totalPrice": 0,
           "qty": 1
-        },
+        }
+      ],
+      "total": 300,
+      "username": "ram",
+      "email": "ram1@gmail.com",
+      "paymentMethod": "cod",
+      "orderStatus": "placed",
+      "shippingAddress": {
+        "name": "Dhrumil Patel",
+        "address1": "Idar",
+        "city": "Jadar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "383110",
+        "mobile": "09913618010"
+      },
+      "orderDate": "4/4/2025",
+      "orderTime": "11:19:33 PM",
+      "createdAt": "2025-04-04T17:49:33.083Z"
+    },
+    {
+      "id": "4cf3",
+      "cartItems": [
         {
-          "id": "62ca",
-          "name": "Lavender Tissue Silk Anarkali",
+          "id": "a663",
+          "name": "Lehenga",
           "brand": "",
           "category": "Lehenga",
           "price": 3000,
-          "stock": 8,
+          "stock": 3,
           "images": [
-            "http://res.cloudinary.com/krupa27/image/upload/v1743109657/RentTrendproduct/yleh440wlbc9xhjoeze0.webp",
-            "http://res.cloudinary.com/krupa27/image/upload/v1743109665/RentTrendproduct/kvonricie1k5j0aascat.webp",
-            "http://res.cloudinary.com/krupa27/image/upload/v1743109666/RentTrendproduct/jmns0vhitvih0udaxpwx.webp"
+            "http://res.cloudinary.com/krupa27/image/upload/v1743422723/RentTrendproduct/owodhh0hzrruqjhhcs5p.webp"
           ],
-          "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta",
-          "createdAt": "2025-03-27T21:09:36.853Z",
-          "supplierId": "a756",
-          "supplier": "krupa",
-          "BookingDate": "2025-03-31",
-          "returnDate": "2025-04-02",
-          "totalPrice": 6000,
-          "qty": 1
-        },
-        {
-          "id": "07ae",
-          "name": "cbsdjcbd",
-          "brand": "",
-          "category": "Sadi",
-          "price": 300,
-          "stock": 9,
-          "images": [
-            "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
-          ],
-          "desc": "weeeeeeeeeeeeeeeeeee",
-          "createdAt": "2025-03-27T17:29:32.026Z",
-          "supplierId": "a756",
-          "supplier": "krupa",
-          "editedAt": "2025-03-27T21:12:54.622Z",
-          "BookingDate": "2025-03-31",
-          "returnDate": "2025-04-04",
-          "totalPrice": 1200,
+          "desc": "party Lehenga",
+          "createdAt": "2025-03-31T12:05:44.990Z",
+          "BookingDate": "2025-04-03",
+          "returnDate": "2025-04-11",
+          "totalPrice": 24000,
           "qty": 1
         }
       ],
-      "total": 8300,
-      "username": "ram ",
-      "email": "ram@gmail.com",
-      "paymentMethod": "online",
-      "orderStatus": "placed",
-      "orderDate": "31/03/2025",
-      "orderTime": "17:21:03",
-      "shippingAddress": {
-        "name": "h",
-        "mobile": "vhj",
-        "address1": "vjhvjvj",
-        "address2": "gjhgjh",
-        "city": "vjvgjh",
-        "state": "vjhvj",
-        "country": "jhvjh",
-        "pincode": "5555555"
-      },
-      "createdAt": "2025-03-31T11:51:03.395Z"
-    },
-    {
-      "id": "b0e7",
-      "cartItems": [
-        {
-          "id": "07ae",
-          "name": "cbsdjcbd",
-          "brand": "",
-          "category": "Sadi",
-          "price": 300,
-          "stock": 9,
-          "images": [
-            "http://res.cloudinary.com/krupa27/image/upload/v1743096568/RentTrendproduct/kcvacw6xllirhj8ozpbs.webp"
-          ],
-          "desc": "weeeeeeeeeeeeeeeeeee",
-          "createdAt": "2025-03-27T17:29:32.026Z",
-          "supplierId": "a756",
-          "supplier": "krupa",
-          "editedAt": "2025-03-27T21:12:54.622Z",
-          "BookingDate": "2025-04-02",
-          "returnDate": "2025-04-17",
-          "totalPrice": 0,
-          "qty": 1
-        },
-        {
-          "id": "f966",
-          "name": "Black Georgette Lehenga Set",
-          "brand": "",
-          "category": "lehenga",
-          "price": 5000,
-          "stock": 10,
-          "images": [
-            "http://res.cloudinary.com/krupa27/image/upload/v1743107698/RentTrendproduct/ocnghqdy7isas0v2oorh.webp",
-            "http://res.cloudinary.com/krupa27/image/upload/v1743107718/RentTrendproduct/i5ifnuh6jvufrpqtsyu3.webp",
-            "http://res.cloudinary.com/krupa27/image/upload/v1743107723/RentTrendproduct/oyzcpxkg4tqhhzijarph.webp"
-          ],
-          "desc": "Black Georgette Blouse With Resham, Stone & Sequence Work, Matching Lehenga With Same Work And Net Dupatta\n",
-          "createdAt": "2025-03-27T20:37:01.187Z",
-          "BookingDate": "2025-04-02",
-          "returnDate": "2025-04-08",
-          "totalPrice": 0,
-          "qty": 1
-        }
-      ],
-      "total": 5300,
+      "total": 3000,
       "username": "ram",
       "email": "ram1@gmail.com",
-      "paymentMethod": "online",
+      "paymentMethod": "cod",
       "orderStatus": "placed",
-      "orderDate": "01/04/2025",
-      "orderTime": "14:26:39",
       "shippingAddress": {
-        "name": "GJGJJG",
-        "mobile": "jhfjf",
-        "address1": "fyuf",
-        "address2": "jhgjh",
-        "city": "fjyf",
-        "state": "hguk",
-        "country": "jhfj",
-        "pincode": "345678"
+        "name": "Dhrumil Patel",
+        "address1": "Idar",
+        "city": "Jadar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "383110",
+        "mobile": "123456777789"
       },
-      "createdAt": "2025-04-01T08:56:39.848Z"
+      "orderDate": "4/4/2025",
+      "orderTime": "11:30:57 PM",
+      "createdAt": "2025-04-04T18:00:57.589Z"
+    },
+    {
+      "id": "d24e",
+      "cartItems": [
+        {
+          "id": "a663",
+          "name": "Lehenga",
+          "brand": "",
+          "category": "Lehenga",
+          "price": 3000,
+          "stock": 2,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743422723/RentTrendproduct/owodhh0hzrruqjhhcs5p.webp"
+          ],
+          "desc": "party Lehenga",
+          "createdAt": "2025-03-31T12:05:44.990Z",
+          "BookingDate": "2025-04-03",
+          "returnDate": "2025-04-12",
+          "totalPrice": 27000,
+          "qty": 1
+        }
+      ],
+      "total": 3000,
+      "username": "ram",
+      "email": "ram1@gmail.com",
+      "paymentMethod": "cod",
+      "orderStatus": "placed",
+      "shippingAddress": {
+        "name": "Dhrumil Patel",
+        "address1": "Idar",
+        "city": "Jadar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "383110",
+        "mobile": "123456777789"
+      },
+      "orderDate": "4/4/2025",
+      "orderTime": "11:31:45 PM",
+      "createdAt": "2025-04-04T18:01:45.842Z"
+    },
+    {
+      "id": "4bf1",
+      "cartItems": [
+        {
+          "id": "a663",
+          "name": "Lehenga",
+          "brand": "",
+          "category": "Lehenga",
+          "price": 3000,
+          "stock": 1,
+          "images": [
+            "http://res.cloudinary.com/krupa27/image/upload/v1743422723/RentTrendproduct/owodhh0hzrruqjhhcs5p.webp"
+          ],
+          "desc": "party Lehenga",
+          "createdAt": "2025-03-31T12:05:44.990Z",
+          "BookingDate": "2025-04-09",
+          "returnDate": "2025-04-30",
+          "totalPrice": 63000,
+          "qty": 1
+        }
+      ],
+      "total": 3000,
+      "username": "ram",
+      "email": "ram1@gmail.com",
+      "paymentMethod": "cod",
+      "orderStatus": "placed",
+      "shippingAddress": {
+        "name": "Dhrumil Patel",
+        "address1": "Idar",
+        "city": "Jadar",
+        "state": "Gujarat",
+        "country": "India",
+        "pincode": "383110",
+        "mobile": "123456777789"
+      },
+      "orderDate": "4/4/2025",
+      "orderTime": "11:32:07 PM",
+      "createdAt": "2025-04-04T18:02:07.321Z"
     }
   ],
   "reviews": [
@@ -428,6 +483,16 @@
       "rating": 3.5,
       "comment": "ggggggg",
       "date": "2025-03-31T11:51:53.059Z"
+    },
+    {
+      "id": "93be",
+      "orderId": "f498",
+      "productId": "f966",
+      "productName": "Black Georgette Lehenga Set",
+      "username": "ram",
+      "rating": 5,
+      "comment": "good product",
+      "date": "2025-04-02T20:15:57.758Z"
     }
   ],
   "coupons": []

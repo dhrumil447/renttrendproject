@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Card, Button, Col, Modal, Row, Form, ListGroup } from "react-bootstrap";
+import { Card, Button, Col, Modal, Row, Form, ListGroup, OverlayTrigger, Tooltip } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { addtocart } from "../redux/cartSlice";
 import ProductImages from "./ProductImages";
 import ReactStars from "react-stars";
 import { motion } from "framer-motion";
+import { toast } from "react-toastify";
 
 const ProductCard = ({ Product }) => {
   const dispatch = useDispatch();
@@ -15,6 +16,8 @@ const ProductCard = ({ Product }) => {
   const [totalPrice, setTotalPrice] = useState(0);
   const [reviews, setReviews] = useState([]);
 
+  const isOutOfStock = Product.stock === 0;
+
   useEffect(() => {
     if (Product) {
       fetch(`${import.meta.env.VITE_BASE_URL}/reviews?productId=${Product.id}`)
@@ -24,14 +27,11 @@ const ProductCard = ({ Product }) => {
     }
   }, [Product]);
 
-  const aggregateRating =
-    reviews.length > 0
-      ? (reviews.reduce((acc, cur) => acc + Number(cur.rating), 0) / reviews.length).toFixed(1)
-      : 0;
-
   const handleCart = () => {
-    setSelectedProduct(Product);
-    setShowModal(true);
+    if (!isOutOfStock) {
+      setSelectedProduct(Product);
+      setShowModal(true);
+    }
   };
 
   const calculateTotalPrice = (start, end) => {
@@ -44,6 +44,11 @@ const ProductCard = ({ Product }) => {
   };
 
   const handleConfirmRental = () => {
+    if (!BookingDate || !returnDate) {
+      toast.error("Please select both Booking and Return dates.");
+      return;
+    }
+
     dispatch(addtocart({ ...selectedProduct, BookingDate, returnDate, totalPrice }));
     setShowModal(false);
     setBookingDate("");
@@ -53,19 +58,40 @@ const ProductCard = ({ Product }) => {
 
   return (
     <Col lg={3} sm={6} xs={12} md={4}>
-      <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-        <Card className="shadow-lg rounded-4 border-0">
-          <Card.Img
-            src={Product.images[0]}
-            style={{ height: "350px", cursor: "pointer", borderRadius: "12px 12px 0 0" }}
-            onClick={() => setShowModal(true)}
-          />
-          <Card.Body className="text-center">
-            <Card.Title className="fw-bold text-dark">{Product.name}</Card.Title>
-            <Card.Text className="text-muted">{Product.category} <br /> ₹{Product.price}</Card.Text>
-            <Button variant="dark" onClick={handleCart}>Rent Now</Button>
-          </Card.Body>
-        </Card>
+      <motion.div whileHover={{ scale: isOutOfStock ? 1 : 1.05 }} whileTap={{ scale: isOutOfStock ? 1 : 0.95 }}>
+        <OverlayTrigger
+          placement="top"
+          overlay={isOutOfStock ? <Tooltip>Out of Stock</Tooltip> : <></>}
+        >
+          <Card
+            onClick={handleCart}
+            className="shadow-lg rounded-4 border-0"
+            style={{
+              height: "550px",
+              opacity: isOutOfStock ? 0.6 : 1,
+              pointerEvents: isOutOfStock ? "none" : "auto",
+              cursor: isOutOfStock ? "not-allowed" : "pointer"
+            }}
+          >
+            <Card.Img
+              src={Product.images[0]}
+              style={{
+                height: "350px",
+                borderRadius: "12px 12px 0 0",
+                filter: isOutOfStock ? "grayscale(100%) blur(1px)" : "none"
+              }}
+            />
+            <Card.Body className="text-center">
+              <Card.Title className="fw-bold text-dark">{Product.name}</Card.Title>
+              <Card.Text className="text-muted">
+                {Product.category} <br /> ₹{Product.price}
+              </Card.Text>
+              <Button variant={isOutOfStock ? "danger" : "dark"} disabled={isOutOfStock}>
+                {isOutOfStock ? "Out of Stock" : "Rent Now"}
+              </Button>
+            </Card.Body>
+          </Card>
+        </OverlayTrigger>
       </motion.div>
 
       <Modal show={showModal} onHide={() => setShowModal(false)} size="xl" centered>
@@ -88,11 +114,25 @@ const ProductCard = ({ Product }) => {
                 <Form>
                   <Form.Group className="mb-3">
                     <Form.Label>Booking Date</Form.Label>
-                    <Form.Control type="date" value={BookingDate} onChange={(e) => setBookingDate(e.target.value)} />
+                    <Form.Control
+                      type="date"
+                      value={BookingDate}
+                      onChange={(e) => {
+                        setBookingDate(e.target.value);
+                        calculateTotalPrice(e.target.value, returnDate);
+                      }}
+                    />
                   </Form.Group>
                   <Form.Group className="mb-3">
                     <Form.Label>Return Date</Form.Label>
-                    <Form.Control type="date" value={returnDate} onChange={(e) => setReturnDate(e.target.value)} />
+                    <Form.Control
+                      type="date"
+                      value={returnDate}
+                      onChange={(e) => {
+                        setReturnDate(e.target.value);
+                        calculateTotalPrice(BookingDate, e.target.value);
+                      }}
+                    />
                   </Form.Group>
                 </Form>
                 {totalPrice > 0 && <p className="mt-2"><strong>Total Price:</strong> ₹{totalPrice}</p>}

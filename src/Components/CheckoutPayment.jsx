@@ -26,8 +26,15 @@ const CheckoutPayment = () => {
     const handleCODorder = async()=>{
         try{
             await axios.post(`${import.meta.env.VITE_BASE_URL}/orders` , {cartItems , total, username,email , 
-                paymentMethod:'cod' , orderStatus:"placed" , orderDate:new Date().toLocaleDateString() , orderTime:new Date().toLocaleTimeString(), createdAt:new Date()
+                paymentMethod:'cod' , orderStatus:"placed" ,shippingAddress , orderDate:new Date().toLocaleDateString() , orderTime:new Date().toLocaleTimeString(), createdAt:new Date()
             })
+
+            for (const item of cartItems) {
+                const updatedStock = item.stock - 1;
+                await axios.patch(`${import.meta.env.VITE_BASE_URL}/products/${item.id}`, {
+                    stock: updatedStock < 0 ? 0 : updatedStock
+                });
+            }
             toast.success("order placed")
             navigate('/thankyou')     
             dispatch(emptycart())

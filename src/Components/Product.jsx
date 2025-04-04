@@ -5,17 +5,27 @@ import axios from "axios";
 import { motion } from "framer-motion";
 import { FaFilter } from "react-icons/fa";
 import ReactPaginate from "react-paginate";
+import { useLocation } from "react-router-dom";
 
 const Product = () => {
-  let [product, setProduct] = useState([]);
-  let [filteredProducts, setFilteredProducts] = useState([]);
-  let [selectedCategory, setSelectedCategory] = useState(null);
-  let [minPrice, setMinPrice] = useState(0);
-  let [maxPrice, setMaxPrice] = useState(100000);
+  const [product, setProduct] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(100000);
+  const [searchQuery, setSearchQuery] = useState("");
+  const location = useLocation();
 
   useEffect(() => {
+    const queryParams = new URLSearchParams(location.search);
+    const categoryFromUrl = queryParams.get("category");
+    const searchFromUrl = queryParams.get("search");
+
+    setSelectedCategory(categoryFromUrl);
+    setSearchQuery(searchFromUrl || "");
+
     getData();
-  }, []);
+  }, [location.search]);
 
   const getData = async () => {
     try {
@@ -38,11 +48,16 @@ const Product = () => {
       filtered = filtered.filter((item) => item.category === selectedCategory);
     }
 
-    filtered = filtered.filter((item) => item.price >= minPrice && item.price <= maxPrice);
+    filtered = filtered.filter(
+      (item) =>
+        item.price >= minPrice &&
+        item.price <= maxPrice &&
+        item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    );
 
     setFilteredProducts(filtered);
     setItemOffset(0);
-  }, [selectedCategory, minPrice, maxPrice, product]);
+  }, [selectedCategory, minPrice, maxPrice, product, searchQuery]);
 
   //////////////////////////////// Pagination //////////////////////////
   const itemsPerPage = 4;
@@ -67,7 +82,6 @@ const Product = () => {
         {/* Sidebar Filters */}
         <Col xs={3} className="mt-5">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
-            
             {/* Category Filter */}
             <Card className="mb-4 shadow-sm border-0">
               <Card.Header className="bg-dark text-white fw-bold d-flex align-items-center">
@@ -130,7 +144,6 @@ const Product = () => {
             >
               Reset All Filters
             </Button>
-
           </motion.div>
         </Col>
 

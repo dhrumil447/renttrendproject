@@ -1,96 +1,68 @@
-import React from 'react'
-import ImageSlider from './ImageSlider'
-import { Card, Col, Container, Row } from 'react-bootstrap'
-// import Homee from '/src/assets/images/img1.jpg'
-// import Footer from './Footer'
+import React from 'react';
+import ImageSlider from './ImageSlider';
+import { Card, Col, Container, Row } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 
-
-  const images = [
-    {url:"./src/assets/images/product.jpg",text: "acs"},
-    {url:"./src/assets/images/product1.jpg",text: "img2"},
-    {url:"./src/assets/images/product2.jpg",text: "img3"},
-    ]
-
-
+const images = [
+  { url: "./src/assets/images/product.jpg", text: "acs", category: "Accessories" },
+  { url: "./src/assets/images/product1.jpg", text: "img2", category: "Lehengas" },
+  { url: "./src/assets/images/product2.jpg", text: "img3", category: "Kurtis" },
+];
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  // Function to handle category click and navigate to Product page
+  const handleCategoryClick = (category) => {
+    navigate(`/Rentoutfits?category=${category}`);
+  };
+
   return (
     <>
-      <ImageSlider/>
-      <Container  className='mt-5 mb-4 d-flex justify-content-center' style={{backgroundColor:""}}>
+      <ImageSlider />
+      <Container className='mt-5 mb-4 d-flex justify-content-center'>
 
         <Row className='mt-5'>
-          <Col xs={6} md={2}>
-            <Card style={{width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"",marginBottom:"60px"}}>
-              <Card.Img variant='top' src='src/assets/images/img2.jpg' style={{borderRadius:"50%"}}/>
+          {[
+            { img: 'src/assets/images/img2.jpg', title: 'New Arrivals', category: 'New Arrivals' },
+            { img: 'src/assets/images/img3.jpg', title: 'Lehengas', category: 'Lehenga' },
+            { img: 'src/assets/images/img4.jpg', title: 'Ready To Wear', category: 'Ready To Wear' },
+            { img: 'src/assets/images/img5.jpg', title: 'Kurtis', category: 'Kurtis' },
+            { img: 'src/assets/images/img6.jpg', title: 'Bottoms', category: 'Bottoms' },
+            { img: 'src/assets/images/img7.jpg', title: 'Accessories', category: 'Accessories' }
+          ].map((item, index) => (
+            <Col xs={6} md={2} key={index}>
+              <Card
+                style={{ width: "150px", height: "150px", borderRadius: "50%", marginBottom: "60px", cursor: "pointer" }}
+                onClick={() => handleCategoryClick(item.category)}
+              >
+                <Card.Img variant='top' src={item.img} style={{ borderRadius: "50%" }} />
                 <Card.Body>
-                  <Card.Title className='text-center fs-6'>New Arivals</Card.Title>
+                  <Card.Title className='text-center fs-6'>{item.title}</Card.Title>
                 </Card.Body>
               </Card>
-          </Col>
-
-          <Col xs={6} md={2}>
-            <Card style={{width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"",marginBottom:"60px"}}>
-              <Card.Img variant='top' src='src/assets/images/img3.jpg' style={{borderRadius:"50%"}}/>
-                <Card.Body>
-                  <Card.Title className='text-center fs-6'>Lehengas</Card.Title>
-                </Card.Body>
-              </Card>
-          </Col>
-
-          <Col xs={6} md={2}>
-            <Card style={{width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"",marginBottom:"60px"}}>
-              <Card.Img variant='top' src='src/assets/images/img4.jpg' style={{borderRadius:"50%"}}/>
-                <Card.Body>
-                  <Card.Title className='text-center fs-6'>Ready To Wear</Card.Title>
-                </Card.Body>
-              </Card>
-          </Col>
-
-          <Col xs={6} md={2}>
-            <Card style={{width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"",marginBottom:"60px"}}>
-              <Card.Img variant='top' src='src/assets/images/img5.jpg' style={{borderRadius:"50%"}}/>
-                <Card.Body>
-                  <Card.Title className='text-center fs-6'>Kurtis</Card.Title>
-                </Card.Body>
-              </Card>
-          </Col>
-
-          <Col xs={6} md={2}>
-            <Card style={{width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"",marginBottom:"60px"}}>
-              <Card.Img variant='top' src='src/assets/images/img6.jpg' style={{borderRadius:"50%"}}/>
-                <Card.Body>
-                  <Card.Title className='text-center fs-6'>Bottems</Card.Title>
-                </Card.Body>
-              </Card>
-          </Col>
-
-          <Col xs={6} md={2}>
-            <Card style={{width:"150px",height:"150px",borderRadius:"50%",backgroundColor:"",marginBottom:"60px"}}>
-              <Card.Img variant='top' src='src/assets/images/img7.jpg' style={{borderRadius:"50%"}}/>
-                <Card.Body>
-                  <Card.Title className='text-center fs-6'>Accessories</Card.Title>
-                </Card.Body>
-              </Card>
-          </Col>
+            </Col>
+          ))}
         </Row>
       </Container>
 
       <h1 className='mt-5 text-center'>Explore Collection</h1>
 
       <Container fluid>
-      <Row className='mt-4 d-flex justify-content-center gap-5'>
-      {images.map((img,index)=>(
-          <Col xs={6} md={2} key={index} style={{marginRight:"100px"}}>
-            <img style={{width:"350px", height:"450px"}} src={img.url}></img>
-          </Col>
-         
-           ))
-          }
-           </Row>
-        </Container>
+        <Row className='mt-4 d-flex justify-content-center gap-5'>
+          {images.map((img, index) => (
+            <Col xs={6} md={2} key={index} style={{ marginRight: "100px" }}>
+              <img
+                style={{ width: "350px", height: "450px", cursor: "pointer" }}
+                src={img.url}
+                onClick={() => handleCategoryClick(img.category)}
+              />
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;
