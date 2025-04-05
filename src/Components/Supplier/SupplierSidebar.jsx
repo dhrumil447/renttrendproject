@@ -8,7 +8,7 @@ const SupplierSidebar = ({show,setShow}) => {
          {url:'/supplier/categories' ,text:'Manage Categories' , icon:<FaList/>},
          {url:'/supplier/view' ,text:'View Products' , icon:<FaShoppingBag/>},
          {url:'/supplier/add' ,text:'Add Product' , icon:<FaPenFancy/>},
-         {url:'/supplier/orders' ,text:'Manage Orders' , icon:<FaThList/>},
+         {url:'/supplier/suporder' ,text:'Manage Orders' , icon:<FaThList/>},
          {url:'/supplier/users' ,text:'Manage Users' , icon:<FaUser/>},
        ]
   return (

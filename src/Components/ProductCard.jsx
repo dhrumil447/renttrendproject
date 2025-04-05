@@ -111,30 +111,35 @@ const ProductCard = ({ Product }) => {
                 <p><strong>Price Per Day:</strong> ₹{selectedProduct.price}</p>
 
                 {selectedProduct.supplier && <p><strong>Supplier:</strong> {selectedProduct.supplier}</p>}
-                <Form>
-                  <Form.Group className="mb-3">
-                    <Form.Label>Booking Date</Form.Label>
-                    <Form.Control
-                      type="date"
-                      value={BookingDate}
-                      onChange={(e) => {
-                        setBookingDate(e.target.value);
-                        calculateTotalPrice(e.target.value, returnDate);
-                      }}
-                    />
-                  </Form.Group>
-                  <Form.Group className="mb-3">
-                    <Form.Label>Return Date</Form.Label>
-                    <Form.Control
-                      type="date"
-                      value={returnDate}
-                      onChange={(e) => {
-                        setReturnDate(e.target.value);
-                        calculateTotalPrice(BookingDate, e.target.value);
-                      }}
-                    />
-                  </Form.Group>
-                </Form>
+                <Form.Group className="mb-3">
+  <Form.Label>Booking Date</Form.Label>
+  <Form.Control
+    type="date"
+    min={new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().split("T")[0]} // Today + 2 days
+    value={BookingDate}
+    onChange={(e) => {
+      const selected = e.target.value;
+      setBookingDate(selected);
+      calculateTotalPrice(selected, returnDate);
+    }}
+  />
+</Form.Group>
+
+<Form.Group className="mb-3">
+  <Form.Label>Return Date</Form.Label>
+  <Form.Control
+    type="date"
+    min={BookingDate ? new Date(new Date(BookingDate).getTime() + 1 * 24 * 60 * 60 * 1000).toISOString().split("T")[0] : ""}
+    value={returnDate}
+    onChange={(e) => {
+      const selected = e.target.value;
+      setReturnDate(selected);
+      calculateTotalPrice(BookingDate, selected);
+    }}
+    disabled={!BookingDate}
+  />
+</Form.Group>
+
                 {totalPrice > 0 && <p className="mt-2"><strong>Total Price:</strong> ₹{totalPrice}</p>}
                 <h4 className="h5 mt-4">Reviews</h4>
                 <ListGroup>

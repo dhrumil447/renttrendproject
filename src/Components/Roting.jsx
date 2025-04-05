@@ -32,6 +32,8 @@ import Orders from './Admin/Orders'
 import OrderDetails from './Admin/OrderDetails'
 import ContactUs from './ContactUs'
 import ManageReviews from './Admin/ManageReviews'
+import SupplierOrder from './Supplier/SupplierOrder'
+import SupOrderDetails from './Supplier/SupOrderDetails'
 
 const Routing = () => {
   return (
@@ -79,9 +81,9 @@ const Routing = () => {
               
                        <Route path='add' element={<SupplierAddProduct/>}/>
                        <Route path='product/edit/:id' element={<SupplierAddProduct/>}/>
-              
                        <Route path='view' element={<SupplierViewProduct/>}/>
-                       
+                       <Route path='suporder' element={<SupplierOrder/>}/>
+                       <Route path='suporders/:id' element={<SupOrderDetails/>}/>
 
 
                        </Route>
