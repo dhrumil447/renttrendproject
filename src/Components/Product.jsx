@@ -149,8 +149,8 @@ const Product = () => {
 
         {/* Product List */}
         <Col>
-          <h1>Product Page</h1>
-          <hr />
+          {/* <h1>Product Page</h1>
+          <hr /> */}
 
           <Row>
             {currentItems.length > 0 ? (

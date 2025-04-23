@@ -80,7 +80,8 @@ function Header() {
               <ShowOnLogin>
                 <FaCircleUser className='mt-1 ms-4' style={{ fontSize: '35px' }} />
                 <NavDropdown title={`Welcome ${username}`} id="navbarScrollingDropdown" style={{ fontSize: "20px" }}>
-                  <NavDropdown.Item href="#"><FaUser /> My Profile</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/profile"><FaUser /> Profile</NavDropdown.Item>
+                 <NavDropdown.Divider/>
                   <NavDropdown.Divider />
                   <NavDropdown.Item as={NavLink} to="/myorders">My Order</NavDropdown.Item>
                   <NavDropdown.Item href="#">Track Order</NavDropdown.Item>

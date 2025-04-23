@@ -34,6 +34,15 @@ import ContactUs from './ContactUs'
 import ManageReviews from './Admin/ManageReviews'
 import SupplierOrder from './Supplier/SupplierOrder'
 import SupOrderDetails from './Supplier/SupOrderDetails'
+import ManageUser from './Admin/ManageUser'
+import EditUser from './Admin/EditUser'
+import ManageSupplier from './Admin/ManageSupplier'
+import EditSupplier from './Admin/EditSupplier'
+import Profile from './Profile'
+import ForgotPassword from './ForgotPassword'
+import ResetPassword from './ResetPassword'
+import { ProtectedAdmin } from './hiddenlinks'
+import SupManageReviews from './Supplier/SupManageReviews'
 
 const Routing = () => {
   return (
@@ -52,11 +61,12 @@ const Routing = () => {
                 <Route path="thankyou" element={<Thankyou/>} />
                 <Route path="myorders" element={<MyOrders/>} />
                 <Route path="myorders/details/:id" element={<MyOrderDetails/>} />
+                <Route path='profile' element={<Profile/>} />
 
                 {/* <Route path="ContactUs" element={<ContactUs />} /> */}
               </Route>
 
-              <Route path='admin' element={<AdminLayout/>}>
+              <Route path='admin' element={<ProtectedAdmin><AdminLayout/></ProtectedAdmin>}>
                        <Route index element={<Dashbord/>}/>
                        <Route path='categories' element={<Viewcategory/>}/>
                        <Route path='categories/add' element={<AddCategory/>}/>
@@ -68,6 +78,10 @@ const Routing = () => {
                        <Route path='view' element={<ViewProducts/>}/>
                        <Route path='orders' element={<Orders/>}/>
                        <Route path='orders/:id' element={<OrderDetails/>}/>
+                       <Route path='users' element={<ManageUser/>}/>
+                       <Route path='users/edit/:id' element={<EditUser/>}/>
+                       <Route path='supplier' element={<ManageSupplier/>}/>
+                       <Route path='supplier/edit/:id' element={<EditSupplier/>}/>
                        <Route path='reviews' element={<ManageReviews/>}/>
 
                        
@@ -84,6 +98,8 @@ const Routing = () => {
                        <Route path='view' element={<SupplierViewProduct/>}/>
                        <Route path='suporder' element={<SupplierOrder/>}/>
                        <Route path='suporders/:id' element={<SupOrderDetails/>}/>
+                       <Route path='review' element={<SupManageReviews/>}/>
+
 
 
                        </Route>
@@ -92,6 +108,8 @@ const Routing = () => {
                 <Route path="Login" element={<Login />} />
                 <Route path="Register" element={<Register />} />
                 <Route path="Supplierreg" element={<Supplier/>} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route path="/reset-password/:token" element={<ResetPassword />} /> 
 
 
             </Route>

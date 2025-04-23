@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav, Offcanvas } from 'react-bootstrap'
-import { FaHome, FaList, FaPenFancy, FaShoppingBag, FaThList, FaUser } from 'react-icons/fa'
+import { FaComment, FaHome, FaList, FaPenFancy, FaShoppingBag, FaThList, FaUser } from 'react-icons/fa'
 import { NavLink } from 'react-router'
 
 const SupplierSidebar = ({show,setShow}) => {
@@ -9,7 +9,7 @@ const SupplierSidebar = ({show,setShow}) => {
          {url:'/supplier/view' ,text:'View Products' , icon:<FaShoppingBag/>},
          {url:'/supplier/add' ,text:'Add Product' , icon:<FaPenFancy/>},
          {url:'/supplier/suporder' ,text:'Manage Orders' , icon:<FaThList/>},
-         {url:'/supplier/users' ,text:'Manage Users' , icon:<FaUser/>},
+        {url:'/supplier/review' ,text:'Manage Reviews' , icon:<FaComment/>},
        ]
   return (
         <>  <div className="d-none d-md-flex flex-column text-white p-3"  style={{ width: "250px" , backgroundColor:'#441752', height:"700px" }}>

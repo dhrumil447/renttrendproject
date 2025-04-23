@@ -20,6 +20,10 @@ const ReviewModal = ({ orderId, product, onClose, onReviewSubmitted, username })
       rating,
       comment,
       date: new Date().toISOString(),
+      ...(product.supplierId && {
+        supplierId: product.supplierId,
+        supplierName: product.supplier
+        })
     };
 
     try {

@@ -24,7 +24,7 @@ const Footer = () => {
             <h5 className="fw-bold">Quick Links</h5>
             <ul className="list-unstyled ">
               <li><a href="/Rentoutfits" className="text-white text-decoration-none">Rentoutfits</a></li>
-              <li><a href="/accessories" className="text-white text-decoration-none">accessories</a></li>
+              <li><a href="/Rentoutfits?category=Accessories" className="text-white text-decoration-none">accessories</a></li>
               <li><a href="/contactUs" className="text-white text-decoration-none">Contact Us</a></li>
               <li><a href="/about" className="text-white text-decoration-none">About Us</a></li>
             </ul>

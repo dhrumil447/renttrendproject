@@ -97,6 +97,7 @@ try{
                     {show ? <BsEye/> : <BsEyeSlash/>}
                       </Button>
                   </InputGroup>
+                  <Link to='/forgot-password'>Forgot password??</Link>
               </Form.Group>
 
                 <Form.Group className='mb-3'>
