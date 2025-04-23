@@ -4,9 +4,9 @@ import { Card, Col, Container, Row } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 
 const images = [
-  { url: "./src/assets/images/product.jpg", text: "acs", category: "Accessories" },
-  { url: "./src/assets/images/product1.jpg", text: "img2", category: "Lehengas" },
-  { url: "./src/assets/images/product2.jpg", text: "img3", category: "Kurtis" },
+  { url: "./src/assets/images/product.jpg", text: "len", category: "Lehengas" },
+  { url: "./src/assets/images/product1.jpg", text: "img2", category: "Kurtis" },
+  { url: "./src/assets/images/product2.jpg", text: "img3", category: "Bottoms" },
 ];
 
 const Home = () => {
@@ -24,9 +24,9 @@ const Home = () => {
 
         <Row className='mt-5'>
           {[
-            { img: 'src/assets/images/img2.jpg', title: 'New Arrivals', category: 'New Arrivals' },
-            { img: 'src/assets/images/img3.jpg', title: 'Lehengas', category: 'Lehenga' },
-            { img: 'src/assets/images/img4.jpg', title: 'Ready To Wear', category: 'Ready To Wear' },
+            { img: 'src/assets/images/img4.jpg', title: 'Saree', category: 'Saree' },
+            { img: 'src/assets/images/img3.jpg', title: 'Lehengas', category: 'Lehengas' },
+            { img: 'src/assets/images/img2.jpg', title: 'AnarkaliDress', category: 'AnarkaliDress' },
             { img: 'src/assets/images/img5.jpg', title: 'Kurtis', category: 'Kurtis' },
             { img: 'src/assets/images/img6.jpg', title: 'Bottoms', category: 'Bottoms' },
             { img: 'src/assets/images/img7.jpg', title: 'Accessories', category: 'Accessories' }
